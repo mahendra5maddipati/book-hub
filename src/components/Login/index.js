@@ -1,4 +1,4 @@
-import react, {useState} from 'react'
+import React, {useState} from 'react'
 import {useHistory} from 'react-router-dom'
 import Cookies from 'js-cookie'
 

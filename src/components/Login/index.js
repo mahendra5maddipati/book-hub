@@ -56,7 +56,7 @@ const Login = () => {
         />
         <div className="input-container">
           <label className="input-label" htmlFor="username">
-            Password
+            Username*
           </label>
           <input
             type="text"
@@ -69,7 +69,7 @@ const Login = () => {
         </div>
         <div className="input-container">
           <label className="input-label" htmlFor="password">
-            Password
+            Password*
           </label>
           <input
             type="password"
@@ -81,7 +81,7 @@ const Login = () => {
           />
         </div>
         {showSubmitError && <p className="error-message">{errorMsg}</p>}
-        <button type="submit" className="login-botton">
+        <button type="submit" className="login-button">
           Login
         </button>
       </form>

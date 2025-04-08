@@ -80,10 +80,10 @@ const Login = () => {
             placeholder="rahul@2021"
           />
         </div>
+        {showSubmitError && <p className="error-message">{errorMsg}</p>}
         <button type="submit" className="login-botton">
           Login
         </button>
-        {showSubmitError && <p className="error-message">{errorMsg}</p>}
       </form>
     </div>
   )

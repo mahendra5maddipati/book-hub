@@ -1,6 +1,8 @@
+import {Route, Switch} from 'react-router-dom'
 import './App.css'
 import Login from './components/Login'
 import Home from './components/Home'
+import ProtectedRoute from './components/ProtectedRoute'
 // use the below bookshelvesList for rendering read status of book items in Bookshelves Route
 
 const App = () => {
@@ -27,10 +29,10 @@ const App = () => {
     },
   ]
   return (
-    <div>
-      <Login />
-      <Home />
-    </div>
+    <Switch>
+      <Route exact path="/login" component={Login} />
+      <ProtectedRoute exact path="/" component={Home} />
+    </Switch>
   )
 }
 export default App

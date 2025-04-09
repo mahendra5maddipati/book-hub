@@ -1,0 +1,25 @@
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+  height: 56px;
+  background: #fff;
+}
+
+.website-logo-header {
+  width: 92px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.menu-button {
+  border: none;
+  background: #fff;
+  margin-right: 10px;
+}
+
+.menu-items {
+  list-style-type: none;
+}

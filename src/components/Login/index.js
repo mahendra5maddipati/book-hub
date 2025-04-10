@@ -41,6 +41,8 @@ const Login = () => {
     }
   }
 
+  // need to make it responsive site and to add loader
+  // created loader components and implement
   return (
     <div className="login-container">
       <img

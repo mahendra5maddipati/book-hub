@@ -3,6 +3,10 @@ import './App.css'
 import Login from './components/Login'
 import Home from './components/Home'
 import ProtectedRoute from './components/ProtectedRoute'
+import Bookshelves from './components/Bookshelves'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
 // use the below bookshelvesList for rendering read status of book items in Bookshelves Route
 
 const App = () => {
@@ -30,8 +34,9 @@ const App = () => {
   ]
   return (
     <Switch>
-      <Route exact path="/login" component={Login} />
-      <ProtectedRoute exact path="/" component={Home} />
+      <Route exact path='/login' component={Login} />
+      <ProtectedRoute exact path='/' component={Home} />
+      <ProtectedRoute exact path='bookshelves' component={Bookshelves} />
     </Switch>
   )
 }

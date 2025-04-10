@@ -27,10 +27,10 @@ const Header = () => {
         {isMenuOpen && (
           <ul className="menu-items">
             <li className="items">
-              <Link to="Home">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li className="items">
-              <Link to="Bookshelves">Bookshelves</Link>
+              <Link to="bookshelves">Bookshelves</Link>
             </li>
             <li className="items">
               <Link to="Logout">Logout</Link>

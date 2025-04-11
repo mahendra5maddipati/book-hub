@@ -1,4 +1,5 @@
 import {Route, Switch} from 'react-router-dom'
+import {useState, useEffect} from "react";
 import './App.css'
 import Login from './components/Login'
 import Home from './components/Home'
@@ -34,9 +35,9 @@ const App = () => {
   ]
   return (
     <Switch>
-      <Route exact path='/login' component={Login} />
-      <ProtectedRoute exact path='/' component={Home} />
-      <ProtectedRoute exact path='bookshelves' component={Bookshelves} />
+      <Route exact path="/login" component={Login} />
+      <ProtectedRoute exact path="/" component={Home} />
+      <ProtectedRoute exact path="bookshelves" component={Bookshelves} />
     </Switch>
   )
 }
